@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Inicio</title>
+</head>
+
+<body class="vh-100">
+
+    <!-- Esto es el navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-tranparent">
+        <div class="container">
+            <a class="navbar-brand fs-4" href="index.html">GearBoost</a>
+            <button class="navbar-toggler shadow-none border-0" 
+            type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" 
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Fin del navbar -->
+
+            <!-- Esto es la barra lateral -->
+            <div class="menulateral offcanvas offcanvas-start" 
+            tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <!--Fin de la barra lateral--> 
+
+            <!-- Titulo/Encabezado de la barra lateral -->
+                <div class="offcanvas-header text-white border-buttom">
+                    <h5 class="offcanvas-title" 
+                    id="offcanvasNavbarLabel">Bienvenido!</h5>
+                    <button 
+                    type="button" 
+                    class="btn-close btn-close-white" 
+                    data-bs-dismiss="offcanvas" 
+                    aria-label="Close"></button>
+                </div>
+                <!-- Fin del encabezado de la barra lateral -->
+
+                <!-- Cuerpo de la barra lateral -->
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html ">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Secchombre.html">Hombre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="seccmujer.html">Mujer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="varios.html">Varios</a>
+                        </li>
+                        </li>
+                    </ul>
+                    <form class="d-flex ustify-content-center aling-items-center gap-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    </form>
+                    <br>
+                    <!-- Fin del cuerpo de la barra lateral -->
+
+                    <!-- Login Y registrarse -->
+                    <div class="d-flex justify-content-center aling-items-center gap-3">
+                        <a href="login.html" class="btn-loginn">Iniciar Sesión</a>
+                        <a href="registro.html"class="btn-registerr">Registrarse</a>
+                    </div>
+                    <!-- Fin del login y registrarse -->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container py-5">
+        <!-- Carrusel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- Movimientos del carrusel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/gearboost_carrusel.jpg" alt="" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/carrusel2.jpg" alt="" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/carrusel_rojo.jpg" alt="" class="d-block w-100">
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <h1 class="producto">Productos</h1>
+    <div class="card-container">
+       <div class="card">
+        <img src="../img/mancuernas_pag.jpg">
+        <div class="card-content">
+            <h1>Titulo</h1>
+            <p>Est rerum inventore quo voluptatibus consequatur et velit voluptatem sit animi nihil ut magnam ipsum</p>
+            <a href="login.html" class="card-button">Comprar</a>
+            <a href="" class="card-button">Carrito</a>
+        </div>
+       </div> 
+       <div class="card">
+        <img src="../img/mancuernas_pag.jpg">
+        <div class="card-content">
+            <h1>Titulo</h1>
+            <p>Est rerum inventore quo voluptatibus consequatur et velit voluptatem sit animi nihil ut magnam ipsum</p>
+            <a href="login.html" class="card-button">Comprar</a>
+            <a href="" class="card-button">Carrito</a>
+        </div>
+       </div> 
+       <div class="card">
+        <img src="../img/mancuernas_pag.jpg">
+        <div class="card-content">
+            <h1>Titulo</h1>
+            <p>Est rerum inventore quo voluptatibus consequatur et velit voluptatem sit animi nihil ut magnam ipsum</p>
+            <a href="login.html" class="card-button">Comprar</a>
+            <a href="" class="card-button">Carrito</a>
+        </div>
+       </div> 
+       <div class="card">
+        <img src="../img/mancuernas_pag.jpg">
+        <div class="card-content">
+            <h1>Titulo</h1>
+            <p>Est rerum inventore quo voluptatibus consequatur et velit voluptatem sit animi nihil ut magnam ipsums</p>
+            <a href="login.html" class="card-button">Comprar</a>
+            <a href="" class="card-button">Carrito</a>
+        </div>
+       </div> 
+    </div>
+
+        
+</body>
+
+</html>

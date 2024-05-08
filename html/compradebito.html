@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/compradebito.css">
+    <title>Compra debito</title>
+</head>
+<body>
+    <a href="metododepago.html" class="volver-btn">Volver</a>
+    <div class="container">
+        <h2>Compra con tarjeta de débito</h2>
+        <form id="checkout-form">
+        <label for="card-number">Número de Tarjeta:</label>
+        <input type="text" id="card-number" name="card-number" required maxlength="16">
+        <label for="expiration">Fecha de Expiración:</label>
+        <input type="text" id="expiration" name="expiration" placeholder="MM/AA" required>
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" required maxlength="3">
+        <label for="name">Nombre en la Tarjeta:</label>
+        <input type="text" id="name" name="name" required>
+        <a href="venta.html" class="comprar-button">Pagar</a>
+        </form>
+        <div class="preview">
+        <h3>Vista Previa</h3>
+        <div id="card-preview">
+            <div class="card-number">**** **** **** ****</div>
+            <div class="expiration-cvv">
+            <div class="expiration">MM/AA</div>
+            <div class="cvv">***</div>
+            </div>
+            <div class="card-holder">Nombre en la Tarjeta</div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

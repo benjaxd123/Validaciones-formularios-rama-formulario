@@ -1,0 +1,222 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+  background: #6b6b6b;
+  overflow-y: auto;
+}
+  ::selection{
+    background: rgba(26,188,156,0.3);
+  }
+  .container{
+    max-width: 440px;
+    padding: 0 20px;
+    margin: 5px auto;
+  }
+  .wrapper{
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+  }
+  .wrapper .titulo{
+    height: 90px;
+    background: #000000;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 65px;
+  }
+  .wrapper form{
+    padding: 30px 25px 25px 25px;
+  }
+  .wrapper form .row{
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  .wrapper form .row input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 60px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  form .row input:focus{
+    border-color: #000000;
+    box-shadow: inset 0px 0px 2px 2px rgba(26,188,156,0.25);
+  }
+  form .row input::placeholder{
+    color: #999;
+    text-align: left;
+  }
+  .wrapper form .row i{
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    background: #000000;
+    border: 1px solid #124d75;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrapper form .pass{
+    margin: -8px 0 20px 0;
+  }
+  .wrapper form .pass a{
+    color: #416dff;
+    font-size: 17px;
+    text-decoration: none;
+  }
+  .wrapper form .pass a:hover{
+    text-decoration: underline;
+  }
+  .wrapper form .button input{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 0px;
+    background: #000000;
+    border: 1px solid #000000;
+    cursor: pointer;
+  }
+  .wrapper form .registrate{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+  }
+  .wrapper form .registrate a{
+    color: #416dff;
+    text-decoration: none;
+  }
+  form .registrate a:hover{
+    text-decoration: underline;
+  }
+  .volver-btn {
+    background-color: #000000; 
+    color: #fff; 
+    padding: 2px 5px; 
+    text-decoration: none; 
+    border-radius: 50px; 
+    display: inline-block; 
+    margin-bottom: 1px;
+}
+.login-button{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .boton-link:hover {
+    background-color: #333333;
+  }
+  #correo{
+    margin-top: 5px;
+  }
+.navbar-expand-lg {
+    background-color: rgb(0, 0, 0) !important; 
+}
+
+.navbar .navbar-toggler {
+    box-shadow: none;
+    border: 0;
+}
+
+.navbar .navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.25rem; /* Tamaño de fuente para la marca */
+    margin-left: -450px;
+}
+
+.navbar .navbar-toggler-icon {
+    color: white; /* Color del ícono para el toggler */
+}
+
+.menulateral {
+    background-color: rgba(0, 0, 0, 0.15); /* Color de fondo del offcanvas */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque para el offcanvas */
+}
+
+.menulateral .offcanvas-header {
+    border-bottom: 1px solid white; /* Borde en la parte inferior del encabezado */
+    color: white; /* Color del texto en el encabezado */
+}
+
+.menulateral .offcanvas-title {
+    font-size: 1.25rem; /* Tamaño de fuente para el título del offcanvas */
+}
+
+.menulateral .btn-close {
+    color: white; /* Color del botón de cerrar */
+}
+
+.menulateral .offcanvas-body {
+    padding: 1rem; /* Espaciado del cuerpo del offcanvas */
+}
+
+.menulateral .navbar-nav {
+    text-align: auto; /* Centrar el texto del navbar */
+}
+
+.menulateral .nav-link {
+    color: white; /* Color del enlace de navegación */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+}
+
+.menulateral .nav-link:hover {
+    color: lightgray; /* Cambia a gris claro al pasar el mouse */
+}
+
+.menulateral .form-control {
+    color: white; /* Color del texto en la barra de búsqueda */
+    background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    border: 1px solid white; /* Borde blanco */
+}
+
+.menulateral .btn-loginn,
+.menulateral .btn-registerr {
+    font-size: 15px; 
+    padding: 8px 20px; 
+    text-decoration: none; 
+    border-radius: 10px;
+    background-color: rgb(99, 99, 99); 
+    color: white; /* Color del texto */
+}
+
+.menulateral .btn-loginn {
+    padding: 8px 15px;
+}
+
+.menulateral .btn-registerr {
+    padding: 8px 20px;
+}
+.btn-loginn{
+  margin-left: 30px;
+  width: 120px;
+}
+.btn-registerr{
+  margin-left: 20px;
+  width: 120px;
+}

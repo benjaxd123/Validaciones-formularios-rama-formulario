@@ -1,0 +1,106 @@
+body {
+    background: rgba(255, 255, 255, 0.15);
+    background: linear-gradient(120deg, #727272, #adadad);
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.volver-btn {
+    background-color: #bdbdbd; 
+    color: #fff; 
+    padding: 2px 5px; 
+    text-decoration: none; 
+    border-radius: 50px; 
+    display: inline-block; 
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comprar-button {
+    width: 100%;
+    background-color: rgb(94, 196, 255);
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.preview {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.preview h3 {
+    margin-top: 0;
+}
+
+#card-preview {
+    background-color: #6e73fece;
+    padding: 20px;
+    border-radius: 10px;
+    border-color: black;
+
+} 
+
+.card-number {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.expiration-cvv {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.card-holder {
+    font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .volver-btn {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+}

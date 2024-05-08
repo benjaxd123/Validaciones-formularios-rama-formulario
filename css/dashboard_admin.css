@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    color: #ffffff;
+}
+
+.btn {
+    background: rgb(99, 99, 99);
+    color: white;
+    padding: 5px 12px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 50px;
+    font-size: 15px;
+}
+
+.MenuLateral {
+    background: #000000;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MenuLateral .NombreMarca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container1 {
+    width: 100%; /* Ocupa toda la anchura de la página */
+    height: calc(200vh - 10vh); /* Ajusta la altura para ocupar todo el espacio menos la franja azul */
+    background: #9b9b9b;
+    display: flex;
+    flex-direction: column; /* Para que los elementos dentro del contenedor se apilen verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.container1 .header {
+    position: center;
+    top: 0;
+    width: 100%; /* Ocupa toda la anchura de la página */
+    height: 10vh;
+    background: rgb(170, 170, 170);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container1 .header .nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.container1 .header .nav .Buscar {
+
+    flex: 3;
+    display: flex;
+    justify-content: center;
+}
+
+.container1 .header .nav .Buscar input[type=text] {
+    border: none;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    width: 50%;
+    margin-right: 10px;
+}
+
+.container1 .header .nav .Buscar button {
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container1 .header .nav .Usuario {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.container1 .header .nav .Usuario img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.container1 img.grafico-usuarios {
+    margin-top: 20px; /* Ajusta la distancia hacia abajo */
+}
+
+.container1 .texto-encima {
+    position: absolute;
+    top: 50%; /* Coloca el texto en la mitad superior del contenedor */
+    left: 50%; /* Coloca el texto en la mitad izquierda del contenedor */
+    transform: translate(-50%, -50%); /* Centra el texto tanto horizontal como verticalmente */
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+/* Para dispositivos móviles pequeños */
+@media screen and (max-width: 768px) {
+    .MenuLateral {
+        height: auto; /* Deja que la altura se ajuste automáticamente */
+    }
+
+    .container1 .header .nav .Buscar {
+        flex: 2; /* Reduce el espacio dedicado a la barra de búsqueda */
+    }
+
+    .container1 img.grafico-usuarios,
+    .container1 img.grafico-ventas {
+        width: 80%; /* Ajusta el tamaño de las imágenes para dispositivos pequeños */
+        margin-top: 10px; /* Reduce la distancia hacia abajo */
+    }
+
+    .container1 .texto-encima {
+        font-size: 18px; /* Reduce el tamaño del texto para dispositivos pequeños */
+    }
+
+    .btn {
+        padding: 8px 12px; /* Ajusta el relleno del botón para dispositivos pequeños */
+        margin-right: 5px; /* Reduce el espacio entre botones */
+        font-size: 14px; /* Reduce el tamaño del texto del botón para dispositivos pequeños */
+    }
+}
