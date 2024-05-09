@@ -10,6 +10,8 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estilo.css">
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="/js/query.js"></script>
     <title>Inicio</title>
 </head>
 
@@ -112,7 +114,13 @@
             </button>
         </div>
     </div>
-    <h1 class="producto">Productos</h1>
+    <div class="container text-center mt-5">
+        <h1>Este sería tu perro ideal🐶👍:</h1>
+        <img id="imagen-perro" src="" alt="Imagen de perro" class="img-fluid" style="max-width: 300px;">
+        <button id="boton-nueva-imagen" class="btn btn-dark mt-3">Busca un perrito</button>
+        <p id="error" class="text-danger mt-1"></p>
+    </div>
+    <h1 class="producto1">Productos</h1>
     <div class="card-container">
        <div class="card">
         <img src="../img/mancuernas_pag.jpg">

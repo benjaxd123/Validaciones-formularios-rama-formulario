@@ -15,6 +15,12 @@ function validarRegistro() {
         alert("Todos los campos son obligatorios");
         return false;
     }
+
+    if (nombre ===''){
+        document.getElementById('mensaje').innerText = 'El nombre ingresado no es válido'
+    }
+
+
     else if (contraseña !== contraseña2) {
         alert("Las contraseñas no coinciden")
         return false;
@@ -39,14 +45,17 @@ function validarRegistro() {
         return false;
     }
 
-    else if (rut.length > 10){
-        alert("El rut es muy largo")
+    else if (rut.length > 9){
+        alert("El rut es muy largo, sin puntos ni guión")
         return false;
     }
 
     else if (rut.length < 9) {
         alert("El rut es muy corto")
         return false;
+    }
+    else if(rut < 0){
+        alert("El rut no puede tener numeros negativos")
     }
 
     else if (telefono.length > 10) {
@@ -57,6 +66,9 @@ function validarRegistro() {
     else if (telefono.length < 9) {
         alert("El número de telefono es muy corto")
         return false;
+    }
+    else if (telefono < 0) {
+        alert("El número de telefono no puede ser negativo")
     }
 
     else if (isNaN(telefono)) {
@@ -90,6 +102,7 @@ function validarRegistro() {
     }
     
 }
+
 
 function validarAdmin() {
     var usuario_admin, contraseña_admin;

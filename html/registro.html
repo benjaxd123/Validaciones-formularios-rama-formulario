@@ -86,11 +86,11 @@
         </div>
         <div class="row mb-5">
           <label for="rut" class="form-label">Rut</label>
-          <input type="text" min="1" pattern="^[0-9]+" placeholder="ej:12345678-9" name="rut" id="rut" class="form-control is-valid" required> 
+          <input type="text" placeholder="ej:12345678-9" name="rut" id="rut" class="form-control is-valid" required> 
         </div>
         <div class="row mb-5">
           <label for="celular" class="form-label">Celular</label>
-          <input type="number" min="1" pattern="^[0-9]+" placeholder="ej:912345678" name="telefono" id="telefono" class="form-control is-valid" required>
+          <input type="number" placeholder="ej:912345678" name="telefono" id="telefono" class="form-control is-valid" required minlength="9" maxlength="9">
         </div>
         <div class="row mb-5">
           <label for="correo" class="form-label">Correo electrónico</label>
