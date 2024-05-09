@@ -12,22 +12,102 @@
     <title>Ingreso direccion</title>
 </head>
 <body>
-    <a href="carrito.html" class="volver-btn">Volver</a>
-    <div class="container">
-        <h2>Ingresa tus datos de direccion</h2>
-        <form id="checkout-form">
-        <label for="card-number">Nombre y apellido:</label>
-        <input type="text" id="card-number" name="card-number" required maxlength="30">
-        <label for="expiration">Region:</label>
-        <input type="text" id="expiration" name="expiration" required maxlength="30">
-        <label for="cvv">Comuna:</label>
-        <input type="text" id="cvv" name="cvv" required maxlength="25">
-        <label for="name">Calle:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="name">Direccion:</label>
-        <input type="text" id="name" name="name" required>
-        <a href="metododepago.html" class="comprar-button">Pagar</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-tranparent">
+        <div class="container">
+            <a class="navbar-brand fs-4" href="sesioniniciada.html">GearBoost</a>
+            <button class="navbar-toggler shadow-none border-0" 
+            type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" 
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Fin del navbar -->
+
+            <!-- Esto es la barra lateral -->
+            <div class="menulateral offcanvas offcanvas-start" 
+            tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <!--Fin de la barra lateral--> 
+
+            <!-- Titulo/Encabezado de la barra lateral -->
+                <div class="offcanvas-header text-white border-buttom">
+                    <h5 class="offcanvas-title" 
+                    id="offcanvasNavbarLabel">Bienvenido!</h5>
+                    <button 
+                    type="button" 
+                    class="btn-close btn-close-white" 
+                    data-bs-dismiss="offcanvas" 
+                    aria-label="Close"></button>
+                </div>
+                <!-- Fin del encabezado de la barra lateral -->
+
+                <!-- Cuerpo de la barra lateral -->
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="sesioniniciada.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sesion_hombre_ini.html">Hombre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sesion_mujer_ini.html">Mujer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sesion_varios_ini.html">Varios</a>
+                        </li>
+                        </li>
+                    </ul>
+                    <form class="d-flex ustify-content-center aling-items-center gap-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    </form>
+                    <br>
+                    <!-- Fin del cuerpo de la barra lateral -->
+
+                    <!-- Login Y registrarse -->
+                    <div class="d-flex justify-content-center aling-items-center gap-4">
+                        <a href="carrito.html" class="btn-login">Carrito</a>
+                        <a href="cerrarsesion.html"class="btn-register">Cerrar Sesión</a>
+                        <a href="historial_compras.html"class="btn-histo">Historial de compras</a>
+                    </div>
+                    <!-- Fin del login y registrarse -->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-dir">
+        <form action="metododepago.html" >
+            <div class="form" metod="post">
+                <h2>Ingresa tus datos de direccion</h2>
+                <div class="grupo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre" >
+                </div>
+                <div class="grupo">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese apellido" >
+                </div>
+                <div class="grupo">
+                    <label for="region">Region:</label>
+                    <input type="text" id="region" name="region" placeholder="Ingrese una region" >
+                </div>
+                <div class="grupo">
+                    <label for="comuna">Comuna:</label>
+                    <input type="text" id="comuna" name="comuna" placeholder="Ingrese una comuna" >
+                </div>
+                <div class="grupo">
+                    <label for="calle">Calle:</label>
+                    <input type="text" id="calle" name="calle" placeholder="Ingrese una calle" >
+                </div>
+                <div class="grupo">
+                    <label for="direccion">Direccion</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Ingrese una direccion" >
+                </div>
+                <input type="submit" onclick= 'return formularioDireccion();' value='Confirmar Cambios'>
+            </div>   
         </form>
+        <div id='error'></div>  
     </div>
+    <script src="../js/prueba.js"></script>
 </body>
 </html>

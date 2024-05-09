@@ -12,8 +12,70 @@
     <title>Metodo de pago</title>
 </head>
 <body>
-    <a href="ingreso_direccion.html" class="volver-btn">Volver</a>
-    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-tranparent">
+        <div class="container">
+            <a class="navbar-brand fs-4" href="sesioniniciada.html">GearBoost</a>
+            <button class="navbar-toggler shadow-none border-0" 
+            type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" 
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Fin del navbar -->
+
+            <!-- Esto es la barra lateral -->
+            <div class="menulateral offcanvas offcanvas-start" 
+            tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <!--Fin de la barra lateral--> 
+
+            <!-- Titulo/Encabezado de la barra lateral -->
+                <div class="offcanvas-header text-white border-buttom">
+                    <h5 class="offcanvas-title" 
+                    id="offcanvasNavbarLabel">Bienvenido!</h5>
+                    <button 
+                    type="button" 
+                    class="btn-close btn-close-white" 
+                    data-bs-dismiss="offcanvas" 
+                    aria-label="Close"></button>
+                </div>
+                <!-- Fin del encabezado de la barra lateral -->
+
+                <!-- Cuerpo de la barra lateral -->
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="sesioniniciada.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sesion_hombre_ini.html">Hombre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sesion_mujer_ini.html">Mujer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sesion_varios_ini.html">Varios</a>
+                        </li>
+                        </li>
+                    </ul>
+                    <form class="d-flex ustify-content-center aling-items-center gap-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    </form>
+                    <br>
+                    <!-- Fin del cuerpo de la barra lateral -->
+
+                    <!-- Login Y registrarse -->
+                    <div class="d-flex justify-content-center aling-items-center gap-4">
+                        <a href="carrito.html" class="btn-login">Carrito</a>
+                        <a href="cerrarsesion.html"class="btn-register">Cerrar Sesión</a>
+                        <a href="historial_compras.html"class="btn-histo">Historial de compras</a>
+                    </div>
+                    <!-- Fin del login y registrarse -->
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-pago">
         <h2>Seleccionar Método de Pago</h2>
         <div class="payment-methods">
         <a href="compradebito.html" class="payment-method">
