@@ -1,58 +1,47 @@
-function validarRegistro() {
-    var nombre, apellido, rut, telefono, correo, contraseña, expresion;
-    nombre = document.getElementById("nombre").value;
-    apellido = document.getElementById("apellido").value;
-    rut = document.getElementById("rut").value;
-    telefono = document.getElementById("telefono").value;
-    correo = document.getElementById("correo").value;
-    contraseña = document.getElementById("contraseña").value;
 
+    var nombre = document.getElementById("nombre");
+    var apellido = document.getElementById("apellido");
+    var rut = document.getElementById("rut");
+    var telefono = document.getElementById("telefono");
+    var correo = document.getElementById("correo");
+    var contraseña = document.getElementById("contraseña");
+    var contraseña2 = document.getElementById("contraseña2");
+    
+    error.style.color = 'red';
+    function validarRegistro() {
+        console.log('Enviando formulario...')
     expresion = /\w+@\w+\.+[a-z]/;
+        var mensajesError = []
 
-    if(nombre === "" || apellido === "" || rut === "" || telefono === "" || correo === "" ) {
-        alert("Todos los campos son obligatorios");
-        return false;
+    if (nombre.value === null || nombre.value === '' ||nombre.value.length > 30 || nombre.value.length < 4) {
+        mensajesError.push("El nombre no es válido")
     }
-    else if (nombre.length > 30) {
-        alert("El nombre es muy largo")
-        return false;
+    if (apellido.value === null || nombre.value === '' ||apellido.value.length > 30 || apellido.value.length < 4) {
+        mensajesError.push("El apellido no es válido")
     }
-    else if (apellido.length > 30) {
-        alert("El apellido es muy largo")
-        return false;
+    if (rut.value === null || rut.value === '' ||rut.value.length > 10 || rut.value.length < 9){
+        mensajesError.push("Ingresa un rut valido")
     }
-    else if (rut.length > 10){
-        alert("El rut es muy largo")
-        return false;
+    if (telefono === null || telefono.value === ''||telefono.value.length > 10 || telefono.value.length < 9) {
+        mensajesError.push("Ingresa un telefono valido")
     }
-    else if (rut.length < 9) {
-        alert("El rut es muy corto")
-        return false;
+    if (isNaN(telefono)) {
+        mensajesError.push("El telefono ingresado no es un número")
     }
-    else if (telefono.length > 10) {
-        alert("El número de telefono es muy largo")
-        return false;
+    if (correo.value === null|| correo.value === ''||correo.value.length > 60 || correo.value.length < 10) {
+        mensajesError.push("El correo no es válido")
     }
-    else if (telefono.length < 9) {
-        alert("El número de telefono es muy corto")
-        return false;
+    if(!expresion.test(correo)){
+        mensajesError.push("El correo no es válido")
     }
-    else if (isNaN(telefono)) {
-        alert("El telefono ingresado no es un número")
-        return false;
+    if (contraseña.value === null|| contraseña.value === ''||contraseña.value.length > 30 || contraseña.value.length < 5) {
+        mensajesError.push("La contraseña no es valida")
     }
-    else if (correo.length > 60) {
-        alert("El correo es muy largo")
-        return false;
+    if (contraseña2.value === null|| contraseña2.value === ''||contraseña2 != contraseña) {
+        mensajesError.push("Las contraseñas deben ser iguales")
     }
-    else if(!expresion.test(correo)){
-        alert("El correo no es válido")
-        return false
-    }
-    else if (contraseña.length > 30) {
-        alert("La contraseña es muy larga max 30")
-        return false;
-    }
+    error.innerHTML = mensajesError.join('');
+    return mensajesError.length === 0;
 }
 
 function validarAdmin() {

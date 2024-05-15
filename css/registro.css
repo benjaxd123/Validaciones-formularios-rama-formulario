@@ -1,177 +1,28 @@
-
-
-body {
-    background: linear-gradient(120deg, #181818,#adadad);
-    
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
-
-.registrarse{
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    padding: 10px 20px;
-    background-color: #000000;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
+body{
+  background: #6b6b6b;
+  overflow-y: auto;
 }
-
-.boton-link:hover {
-    background-color: #333333;
-}
-.navbar-expand-lg {
-    background-color:rgb(0, 0, 0) !important;
-    height: 100px; 
-}
-.btn-registerr{
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-    padding: 8px 20px;
-    border-radius: 10px;
-    background-color: rgb(99, 99, 99);
-    height: 37px;
-}
-.btn-loginn{
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-    padding: 8px 15px;
-    border-radius: 10px;
-    margin: 20px;
-    background-color: rgb(99, 99, 99);
-    height: 37px;
-}
-.btn-histo{
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-    padding: 10px 15px;
-    border-radius: 10px;
-    background-color: rgb(99, 99, 99);
-    height: 37px;
-}
-.offcanvas-body .btn-login,
-.offcanvas-body .btn-register,
-.offcanvas-body .btn-histo {
-    font-size: 14px; 
-    padding: 9px 10px;
-    margin: -8px; 
-    margin-left: -2px;
-    margin-top: 3px;
-}
-.card-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px;
-    margin-top: 100px;
-}
-.card{
-    width: 325px;
-    background-color: rgb(100, 100, 100);
-    border-radius: 10px;
-    box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
-    overflow: hidden;
-    transition: transform 0.6s ease;
-}
-.card:hover {
-    transform: translateY(-20px);
-}
-.card img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-.card-content{
-    padding: 20px;
-}
-.card-content h1{
-    font-size: 25px;
-    margin-bottom: 10px;
-    color: white;
-}
-.card-content p{
-    font-size: 15px;
-    color: rgb(255, 255, 255);
-    margin-bottom: 20px;
-}
-.card-button{
-    display: inline-block;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    border-radius: 8px;
-    padding: 8px 16px;
-}
-.producto{
-    text-align: center;
-    font-size: 55px;
-}
-.table-container {
-    max-width: 1400px; 
-    margin: 0 auto; 
-    margin-top: 30px;
-}
-
-.offcanvas-body .btn-loginn,
-.offcanvas-body .btn-registerr {
-    font-size: 15px; 
-    padding: 8px 20px; 
-    margin: 5px; 
-}
-.btn-register{
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-    padding: 8px 20px;
-    border-radius: 10px;
-    background-color: rgb(99, 99, 99);
-    height: 37px;
-}
-.btn-login{
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-    padding: 8px 15px;
-    border-radius: 10px;
-    margin: 20px;
-    background-color: rgb(99, 99, 99);
-    height: 37px;
-}
-.btn btn-primary{
-    margin-left: 1582px;
-}
-.borrarpedido{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(182, 20, 20); 
-    color: #fff; 
-    padding: 5px 9px; 
-    border-radius: 8px;
-    text-decoration: none; 
-}
-
-::selection {
-    background: rgba(26, 188, 156, 0.3);
-}
-
-.container {
-    max-width: 600px;
+  ::selection{
+    background: rgba(26,188,156,0.3);
+  }
+  .container{
+    max-width: 440px;
     padding: 0 20px;
-    margin: 80px auto;
-}
-
-.wrapper {
-    width: 35%;
-    margin: auto;
+    margin: 5px auto;
+  }
+  .wrapper{
+    width: 100%;
     background: #fff;
     border-radius: 5px;
-    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
-}
-
-.wrapper .titulo {
+    box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+  }
+  .wrapper .titulo{
     height: 90px;
     background: #000000;
     border-radius: 5px 5px 0 0;
@@ -181,19 +32,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.wrapper form {
+    margin-top: 65px;
+  }
+  .wrapper form{
     padding: 30px 25px 25px 25px;
-}
-
-.wrapper form .row {
+  }
+  .wrapper form .row{
     height: 45px;
     margin-bottom: 15px;
     position: relative;
-}
-
-.wrapper form .row input {
+  }
+  .wrapper form .row input{
     height: 100%;
     width: 100%;
     outline: none;
@@ -202,18 +51,16 @@ body {
     border: 1px solid lightgrey;
     font-size: 16px;
     transition: all 0.3s ease;
-}
-
-form .row input:focus {
+  }
+  form .row input:focus{
     border-color: #000000;
-    box-shadow: inset 0px 0px 2px 2px rgba(26, 188, 156, 0.25);
-}
-
-form .row input::placeholder {
+    box-shadow: inset 0px 0px 2px 2px rgba(26,188,156,0.25);
+  }
+  form .row input::placeholder{
     color: #999;
-}
-
-.wrapper form .row i {
+    text-align: left;
+  }
+  .wrapper form .row i{
     position: absolute;
     width: 47px;
     height: 100%;
@@ -225,21 +72,19 @@ form .row input::placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.wrapper form .pass{
+  }
+  .wrapper form .pass{
     margin: -8px 0 20px 0;
-}
-.wrapper form .pass a{
+  }
+  .wrapper form .pass a{
     color: #416dff;
     font-size: 17px;
     text-decoration: none;
-}
-.wrapper form .pass a:hover{
+  }
+  .wrapper form .pass a:hover{
     text-decoration: underline;
-}
-
-.wrapper form .button input {
+  }
+  .wrapper form .button input{
     color: #fff;
     font-size: 20px;
     font-weight: 500;
@@ -247,37 +92,215 @@ form .row input::placeholder {
     background: #000000;
     border: 1px solid #000000;
     cursor: pointer;
-}
-
-.wrapper form .registrate {
+  }
+  .wrapper form .registrate{
     text-align: center;
     margin-top: 20px;
     font-size: 17px;
-}
-
-.wrapper form .registrate a {
+  }
+  .wrapper form .registrate a{
     color: #416dff;
     text-decoration: none;
-}
-
-form .registrate a:hover {
+  }
+  form .registrate a:hover{
     text-decoration: underline;
-}
-
-.volver-btn {
-    background-color: #000000;
-    color: #fff;
-    padding: 2px 5px;
-    text-decoration: none;
-    border-radius: 50px;
-    display: inline-block;
+  }
+  .volver-btn {
+    background-color: #000000; 
+    color: #fff; 
+    padding: 2px 5px; 
+    text-decoration: none; 
+    border-radius: 50px; 
+    display: inline-block; 
     margin-bottom: 1px;
 }
+.login-button{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .boton-link:hover {
+    background-color: #333333;
+  }
+  #correo{
+    margin-top: 5px;
+  }
+.navbar-expand-lg {
+    background-color: rgb(0, 0, 0) !important; 
+}
 
-@media(max-width: 991px){
-    .menulateral{
-        background-color: rgba(0, 0, 0, 0.15);
-        backdrop-filter: blur(10px);
-    }
-    
-} 
+.navbar .navbar-toggler {
+    box-shadow: none;
+    border: 0;
+}
+
+.navbar .navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.25rem; /* Tamaño de fuente para la marca */
+    margin-left: -450px;
+}
+
+.navbar .navbar-toggler-icon {
+    color: white; /* Color del ícono para el toggler */
+}
+
+.menulateral {
+    background-color: rgba(0, 0, 0, 0.15); /* Color de fondo del offcanvas */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque para el offcanvas */
+}
+
+.menulateral .offcanvas-header {
+    border-bottom: 1px solid white; /* Borde en la parte inferior del encabezado */
+    color: white; /* Color del texto en el encabezado */
+}
+
+.menulateral .offcanvas-title {
+    font-size: 1.25rem; /* Tamaño de fuente para el título del offcanvas */
+}
+
+.menulateral .btn-close {
+    color: white; /* Color del botón de cerrar */
+}
+
+.menulateral .offcanvas-body {
+    padding: 1rem; /* Espaciado del cuerpo del offcanvas */
+}
+
+.menulateral .navbar-nav {
+    text-align: auto; /* Centrar el texto del navbar */
+}
+
+.menulateral .nav-link {
+    color: white; /* Color del enlace de navegación */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+}
+
+.menulateral .nav-link:hover {
+    color: lightgray; /* Cambia a gris claro al pasar el mouse */
+}
+
+.menulateral .form-control {
+    color: white; /* Color del texto en la barra de búsqueda */
+    background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    border: 1px solid white; /* Borde blanco */
+}
+
+.menulateral .btn-loginn,
+.menulateral .btn-registerr {
+    font-size: 15px; 
+    padding: 8px 20px; 
+    text-decoration: none; 
+    border-radius: 10px;
+    background-color: rgb(99, 99, 99); 
+    color: white; /* Color del texto */
+}
+
+.menulateral .btn-loginn {
+    padding: 8px 15px;
+}
+
+.menulateral .btn-registerr {
+    padding: 8px 20px;
+}
+.btn-loginn{
+  margin-left: 30px;
+  width: 130px;
+}
+.btn-registerr{
+  margin-left: 20px;
+  width: 120px;
+}
+
+/***********************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #707070;
+}
+
+.container-reg {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#titulo {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.grupo {
+  margin-bottom: 20px;
+}
+
+.grupo label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.grupo input[type="text"],
+.grupo input[type="number"],
+.grupo input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.grupo input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.grupo input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.login {
+  
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
+.boton-registrarse{
+  text-align: center;
+
+}
