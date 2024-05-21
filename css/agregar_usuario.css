@@ -1,0 +1,86 @@
+.container-usuario {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #titulo {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .grupo {
+    margin-bottom: 20px;
+  }
+  
+  .grupo label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .grupo input[type="email"],
+  .grupo input[type="text"],
+  .grupo input[type="number"],
+  .grupo input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+  }
+  
+  .grupo input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .grupo input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .login {
+    
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .login a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .login a:hover {
+    text-decoration: underline;
+  }
+  .boton-iniciosesion{
+    text-align: center;
+  
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #707070;
+  }
+  .container-botones{
+    text-align: center;
+    margin-top: 20px;
+  }

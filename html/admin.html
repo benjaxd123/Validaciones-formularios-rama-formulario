@@ -71,27 +71,28 @@
           </div>
       </div>
   </nav>
-  <div class="container">
-    <div class="wrapper">
-      <div class="titulo"><span>ADMIN</span></div>
-      <form action="index_admin.html" method="get" class="was-validated" onsubmit="return validarAdmin();">
-        <div class="row mb-5">
-          <label for="usuario_admin" class="form-label">Usuario</label>
-          <input type="text" placeholder="ej:usuario123" name="usuario_admin" id="usuario_admin"  class="form-control is-valid" required minlength="">
-        </div>
-
-        <div class="row mb-5">
-          <label for="contraseña_admin" class="form-label">Contraseña</label>
-          <input type="password" placeholder="contraseña"  name="contraseña_admin" id="contraseña_admin" class="form-control is-valid" required >
-        </div>
-        <div class="row">
-          <button type="submit" class="btn btn-dark">Iniciar Sesión</button>
-        </div>
-        <div class="registrate"><a href="olvidarcontraseña.html">Olvide mi contraseña</a></div>
-      </form>
-    </div> 
-  </div> 
+  <div class="container-log">
+    <form action="index_admin.html" >
+      <div class="form" metod="post">
+          <div id="titulo">Admin</div>
+          <div class="grupo">
+              <label for="usuario">Usuario:</label>
+              <input type="text" id="usuario" name="usuario" placeholder="Ingrese usuario">
+          </div>
+          <div class="grupo">
+              <label for="password">Contraseña:</label>
+              <input type="password" id="password" name="password" placeholder="Ingrese contraseña" >
+          </div>
+          <div class="boton-inicioadmin"><input class="btn btn-dark" type="submit" onclick= 'return validarAdmin();' value='iniciar sesion'></div>
+      </div>   
+        <div class="container-botones">
+          <div class="registrate"><a href="olvidarcontraseña.html">Olvide mi contraseña</a></div>
+      </div>
+  </form>
+    <div id="error"></div>
+    </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/validar.js"></script>
 </body>
 </html>

@@ -462,3 +462,16 @@ section{
 }
 
 /*https://www.youtube.com/watch?v=WDq57XdXa0M*/
+
+.agregar-usuario a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff; /* Color de fondo del botón */
+    color: rgb(0, 0, 0); /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Quitar subrayado del enlace */
+    border: none; /* Sin bordes */
+    cursor: pointer; /* Cursor de puntero al pasar por el botón */
+    border-radius: 5px; /* Bordes redondeados */
+    font-family: Arial, sans-serif; /* Fuente del texto */
+}

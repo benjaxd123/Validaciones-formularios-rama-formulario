@@ -44,32 +44,72 @@
     return mensajesError.length === 0;
 }
 
-function validarAdmin() {
-    var usuario_admin, contraseña_admin;
-    usuario_admin = document.getElementById("usuario_admin").value;
-    contraseña_admin = document.getElementById("contraseña_admin").value;
 
-    if(usuario_admin === "" || contraseña_admin === "" ) {
-        alert("Todos los campos son obligatorios");
-        return false;
+
+
+    var usuario = document.getElementById("usuario");
+    var password = document.getElementById("password");
+    error.style.color = 'red';
+    function validarAdmin() {
+
+    expresion = /\w+@\w+\.+[a-z]/;
+        var mensajesError = []
+
+    if(usuario.value === null || usuario.value === '' || usuario.value.length < 5) {
+        mensajesError.push("Nombre de usuario es incorrecto");
     }
-    else if (usuario_admin.length > 20) {
-        alert("El nombre de usuario es muy largo")
-        return false;
+    
+    if (password.value === null || password.value === '' || password.value.length < 4) {
+        mensajesError.push("Contraseña incorrecta")
     }
-    else if (usuario_admin.length < 7) {
-        alert("El nombre de usuario es muy corto")
-        return false;
-    }
-    else if (contraseña_admin.length > 15) {
-        alert("La contraseña es muy larga")
-        return false;
-    }
-    else if (contraseña_admin.length < 7) {
-        alert("La contraseña es muy corta")
-        return false;
-    }
+    error.innerHTML = mensajesError.join('');
+    return mensajesError.length === 0;
 }
+
+
+var correo = document.getElementById("correo");
+var password = document.getElementById("password")
+error.style.color = 'red';
+function validarLogin() {
+
+    expresion = /\w+@\w+\.+[a-z]/;
+    var mensajesError = []
+
+    if (correo.value === null || correo.value === '' ||correo.value.length > 60 || correo.value.length < 6) {
+        mensajesError.push("El correo no es válido")
+    }
+    if (password.value === null || password.value === '' ||password.value.length > 30 || password.value.length < 6) {
+        mensajesError.push("La contraseña no es válida")
+    }
+    error.innerHTML = mensajesError.join('');
+    return mensajesError.length === 0;
+}
+
+var correo = document.getElementById("correo");
+var nombre = document.getElementById("nombre");
+var apellido = document.getElementById("apellido");
+var telefono = document.getElementById("telefono");
+error.style.color = 'red';
+function validarUsuarios() {
+
+    var mensajesError = []
+    
+    if (nombre.value === null || nombre.value === '' || nombre.value.length < 4){
+        mensajesError.push("El nombre no es valido")
+    }
+    if (apellido.value === null || apellido.value === '' || apellido.value.length < 4){
+        mensajesError.push("El apellido no es valido")
+    }
+    if (correo.value === null || correo.value === '' || correo.value.length < 5 ){
+        mensajesError.push("El correo no es valido")
+    }
+    if (telefono.value === null || telefono.value === '' || telefono.value.length < 9 || telefono.value.length > 9){
+        mensajesError.push("El telefono no es valido")
+    }
+    error.innerHTML = mensajesError.join('');
+    return mensajesError.length === 0;
+}
+/*
 function validarLogin() {
         var correo_cliente, contraseña_cliente, expresion2;
         correo_cliente = document.getElementById("correo_cliente").value;
@@ -99,4 +139,4 @@ function validarLogin() {
             return false
         }
 
-}
+}*/

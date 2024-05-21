@@ -71,31 +71,30 @@
           </div>
       </div>
   </nav>
-  <div class="container">
-    <div class="wrapper">
-      <div class="titulo"><span>Iniciar Sesión</span></div>
-      <form action="sesioniniciada.html" method="post" class="was-validated" onsubmit="return validarLogin();">
-        <div class="row mb-5">
-          <label for="correo_cliente" class="form-label">Correo electrónico</label>
-          <input type="email" placeholder="ejemplo@gmail.com" name="correo_cliente" id="correo_cliente" class="form-control is-valid" required>
-        </div>
-
-        <div class="row mb-5">
-          <label for="contraseña_cliente" class="form-label">Contraseña</label>
-          <input type="password" placeholder="ejemploejemplo918" name="contraseña_cliente" id="contraseña_cliente" class="form-control is-valid" required>
-        </div>
-        <div class="row">
-          <button type="submit" class="btn btn-dark">Iniciar Sesión</button>
-        </div>
-
-        <div class="registrate">¿No tienes cuenta? <a href="registro.html">Regístrate</a></div>
-        <div class="registrate">¿Eres admin? <a href="admin.html">Iniciar Sesión</a></div>
-        <div class="registrate"><a href="olvidarcontraseña.html">Olvide mi contraseña</a></div>
-      </form>
-
+  <div class="container-log">
+    <form action="sesioniniciada.html" >
+      <div class="form" metod="post">
+          <div id="titulo">Inicio de sesión</div>
+          <div class="grupo">
+              <label for="correo">Correo:</label>
+              <input type="email" id="correo" name="correo" placeholder="Ingrese correo">
+          </div>
+          <div class="grupo">
+              <label for="password">Contraseña:</label>
+              <input type="password" id="password" name="pasword" placeholder="Ingrese contraseña" >
+          </div>
+          <div class="boton-iniciosesion"><input class="btn btn-dark" type="submit" onclick= 'return validarLogin();' value='iniciar sesion'></div>
+      </div>   
+        <div class="container-botones">
+          <div class="registrate">¿No tienes cuenta? <a href="registro.html">Regístrate</a></div>
+          <div class="registrate">¿Eres admin? <a href="admin.html">Iniciar Sesión</a></div>
+          <div class="registrate"><a href="olvidarcontraseña.html">Olvide mi contraseña</a></div>
+      </div>
+  </form>
+    <div id="error"></div>
     </div> 
-  </div> 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/validar.js"></script>
 </body>
 </html>
